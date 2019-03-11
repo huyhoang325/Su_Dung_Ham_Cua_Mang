@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var so=window.prompt();
+		var array = so.toString();
+		var ketqua = [array[0]];
+		for(var i=1; i<array.length; i++)
+		  {
+		    if((array[i-1]%2 === 0)&&(array[i]%2 === 0))
+		     {
+		      ketqua.push('-', array[i]);
+		     }
+		    else
+		     {
+		      ketqua.push(array[i]);
+		     }
+		  }
+		document.write(ketqua.join(''));
+	</script>
+</body>
+</html>

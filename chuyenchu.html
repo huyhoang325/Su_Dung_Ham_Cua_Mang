@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <script>
+    var array = prompt("The Quick Brown Fox");
+    var len = ["A","Ă","Â","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    var xuong = ["a","ă","â","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    var ketqua = [];
+  
+  for(var i=0; i<array.length; i++)
+  {
+    if(len.indexOf(array[i]) !== -1)
+    {
+      ketqua.push(array[i].toLowerCase());
+    }
+    else if(xuong.indexOf(array[i]) !== -1)
+    {
+      ketqua.push(array[i].toUpperCase());
+    }
+    else 
+    {
+      ketqua.push(array[i]);
+    }
+  }
+document.write(ketqua.join(''));
+  </script>
+</body>
+</html>
